@@ -1,0 +1,2 @@
+gifs filter=lfs diff=lfs merge=lfs -text
+gifs/* filter=lfs diff=lfs merge=lfs -text
