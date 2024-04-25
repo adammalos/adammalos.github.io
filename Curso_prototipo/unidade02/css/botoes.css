@@ -1,0 +1,69 @@
+.btn-panel {
+    border: none;
+    border-bottom: 1px solid var(--disabled);
+    background-color: transparent;
+    color: var(--disabled);
+    font-size: .8em;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.btn-panel.active, .btn-panel:hover {
+    border-bottom: 2px solid var(--primary-dark);
+    color: var(--primary-dark);
+}
+
+.btn-ciclo-mpox {
+    border: 10px;
+    background-color: transparent;
+    position: absolute;
+    height: 4%;
+    width: 3%;
+}
+
+.btn-ciclo-mpox.btn-ciclo-1 {
+    top: 0.5%;
+    left: 48.5%;
+}
+
+.btn-ciclo-mpox.btn-ciclo-2 {
+    top: 27%;
+    left: 56%;
+}
+
+.btn-ciclo-mpox.btn-ciclo-3 {
+    top: 42%;
+    left: 45%;
+}
+
+.btn-ciclo-mpox.btn-ciclo-4 {
+    top: 36%;
+    left: 51%;
+}
+
+.btn-ciclo-mpox.btn-ciclo-5 {
+    top: 40.5%;
+    left: 50.5%;
+}
+.btn-ciclo-mpox.btn-ciclo-6 {
+    top: 14.5%;
+    left: 45.5%;
+}
+
+.btn-ciclo-mpox.btn-ciclo-7 {
+    top: 44.5%;
+    left: 48.5%;
+}
+
+
+  .tooltip-inner {
+    font-size: 1.5rem;
+    background-color: var(--primary-dark); /* Cor de fundo desejada apenas para tooltips especiais */
+    color: var(--primary-light)
+  }
+  
+  @media (max-width: 1200px){
+    .tooltip-inner {
+        font-size: 1rem;
+      }
+}

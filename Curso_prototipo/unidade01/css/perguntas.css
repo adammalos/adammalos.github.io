@@ -1,0 +1,142 @@
+.opcoes label {
+    color: var(--font-light);
+    display: flex; /* Adiciona flexbox */
+    align-items: center; /* Alinha os itens verticalmente */
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+   
+  }
+  
+  .opcoes label:hover {
+    color: var(--aux-hover);
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .opcoes label span {
+    font-weight: 700;
+    color: black;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid var(--font-dark);
+    text-align: center;
+    line-height: 1; /* Use line-height 1 para garantir que o texto não cause distorção no círculo */
+    padding: 0.5em; /* Adiciona um preenchimento interno para garantir que o círculo tenha um tamanho mínimo */
+    margin-right: 16px;
+    background-color: white;
+    width: 2rem; /* Definindo o tamanho do círculo */
+    height: 2rem;
+}
+
+  
+  .opcoes label:hover span {
+    background-color: var(--aux-hover); /* Cor mais escura ao passar o mouse para a letra */
+    color: var(--font-dark); /* Texto branco para a letra ao passar o mouse */
+  }
+  
+  .opcoes label input[type="radio"] {
+    display: none; /* Oculta o botão de rádio padrão */
+  }
+  
+  .opcoes label input[type="radio"]:checked + span {
+    background-color: var(--aux);
+    color: var(--font-dark);
+  }
+  
+  
+  .retorno {
+    display: none;
+  }
+  
+  .explicacao {
+    color: var(--font-light);
+  }
+  
+  .opcao-correta {
+    color: #4DAD33 !important;
+  }
+  
+  .opcao-incorreta {
+    color: #FF4242 !important;
+  }
+
+  .opcoes label {
+    border: 2px solid transparent; /* Adiciona uma borda transparente por padrão */
+    /* Adicione uma margem para compensar a largura da borda */
+}
+
+.opcoes label.clicked {
+    border-color: var(--aux); /* Muda a cor da borda apenas quando clicado */
+}
+
+.div-perguntas {
+    min-width: 111.25rem;
+    max-width: 1111.25rem;
+    max-height: 34.3rem;
+    min-height: 34.3rem;
+    overflow-y: auto;
+}
+  
+  /* Remova esta regra que oculta o botão de rádio padrão */
+.opcoes label input[type="radio"] {
+    display: none; /* Oculta o botão de rádio padrão */
+}
+.opcoes-padrao label input[type="radio"] {
+    display: none; /* Oculta o botão de rádio padrão */
+}
+
+/* Estiliza a bolinha de seleção padrão */
+.opcoes-padrao label input[type="radio"] + span:before {
+    content: ""; /* Remove o conteúdo do pseudo-elemento */
+    display: inline-block; /* Torna o pseudo-elemento um bloco inline */
+    width: 12px; /* Largura do pseudo-elemento */
+    height: 12px; /* Altura do pseudo-elemento */
+    border: 2px solid #FFFFFF; /* Cor da borda (branca por padrão) */
+    background-color: #FFFFFF;
+    border-radius: 50%; /* Transforma o pseudo-elemento em um círculo */
+    margin-right: 10px; /* Margem à direita para separar o pseudo-elemento do texto */
+}
+
+/* Estiliza a bolinha de seleção padrão quando marcada */
+.opcoes-padrao label input[type="radio"]:checked + span:before.opcao-correta.opcao-incorreta {
+    background-color: #FFFFFF; /* Cor de fundo (branca quando clicada) */
+    border: solid 1px #D0BE75;
+}
+
+.shake-animation {
+  animation: shake 0.5s ease;
+}
+
+.opcoes label.opcao-correta span {
+background-color: #4DAD33 !important; /* Altera o fundo da bolinha para verde quando a resposta está correta */
+}
+
+.opcoes label.opcao-incorreta span {
+background-color: #FF4242 !important; /* Altera o fundo da bolinha para vermelho quando a resposta está incorreta */
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translateX(-1px);
+    }
+    
+    20%, 80% {
+        transform: translateX(2px);
+    }
+
+    30%, 50%, 70% {
+        transform: translateX(-4px);
+    }
+
+    40%, 60% {
+        transform: translateX(4px);
+    }
+}
+
+
+

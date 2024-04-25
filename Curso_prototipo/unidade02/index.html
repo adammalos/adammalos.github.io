@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css-unidades/bootstrap.min.css">
+    <link rel="stylesheet" href="../css-unidades/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css-unidades/re-use.css">
+    <link rel="stylesheet" href="../css-unidades/animacao.css">
+    <link rel="stylesheet" href="./css/botoes.css">
+    <link rel="stylesheet" href="../css-unidades/sidenav.css">
+    <link rel="stylesheet" href="../css-unidades/perguntas.css">
+
+    <title>Vírus Zika: Uma Abordagem Geral para Profissionais de Saúde</title>
+</head>
+
+<body>
+    <div class="offcanvas"></div>
+    <!-- SIDEBAR -->
+    <button type="button" class="btn-sidebar" aria-expanded="false" aria-label="Botão - Menu lateral" onclick="nav()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <div class="sidebar sidebar-p">
+        <div>
+            <!-- SIDEBAR - HOME -->
+            <div class="sidebar-item">
+                <a href="#" class="d-flex">
+                    <div class="sidebar-item-icon">
+                        <i class="bi bi-house-fill"></i>
+                    </div>
+                    <div class="sidebar-item-title">
+                        Início
+                    </div>
+                </a>
+            </div>
+            <div class="sidebar-item">
+                <a href="#sobre" class="d-flex">
+                    <div class="sidebar-item-icon  text-center">
+                        <b>01</b>
+                    </div>
+                    <div class="sidebar-item-title">
+                        Sobre
+                    </div>
+                </a>
+            </div>
+            <div class="sidebar-item">
+                <a href="#quadro" class="d-flex">
+                    <div class="sidebar-item-icon  text-center">
+                        <b>02</b>
+                    </div>
+                    <div class="sidebar-item-title">
+                        Quadro clínico e sintomas
+                    </div>
+                </a>
+            </div>
+            <div class="sidebar-item">
+                <a href="#diagnostico" class="d-flex">
+                    <div class="sidebar-item-icon  text-center">
+                        <b>03</b>
+                    </div>
+                    <div class="sidebar-item-title">
+                        Síntese de solicitação de diagnóstico de referência em ZIKV
+                    </div>
+                </a>
+            </div>
+            <div class="sidebar-item">
+                <a href="#laboratorial" class="d-flex">
+                    <div class="sidebar-item-icon  text-center">
+                        <b>04</b>
+                    </div>
+                    <div class="sidebar-item-title">
+                        Investigação laboratorial de ZIKV
+                    </div>
+                </a>
+            </div>
+            <div class="sidebar-item">
+                <a href="#amostras" class="d-flex">
+                    <div class="sidebar-item-icon  text-center">
+                        <b>05</b>
+                    </div>
+                    <div class="sidebar-item-title">
+                        Instruções para coleta de amostras biológicas
+                    </div>
+                </a>
+            </div>
+            <div class="sidebar-item">
+                <a href="#guillain" class="d-flex">
+                    <div class="sidebar-item-icon  text-center">
+                        <b>06</b>
+                    </div>
+                    <div class="sidebar-item-title">
+                        ZIKV e Síndrome de Guillain-Barré - SGB
+                    </div>
+                </a>
+            </div>
+            <div class="sidebar-item">
+                <a href="#microcefalia" class="d-flex">
+                    <div class="sidebar-item-icon  text-center">
+                        <b>07</b>
+                    </div>
+                    <div class="sidebar-item-title">
+                        ZIKV e microcefalia
+                    </div>
+                </a>
+            </div>
+            <div class="sidebar-item">
+                <a href="#rientacoes" class="d-flex">
+                    <div class="sidebar-item-icon  text-center">
+                        <b>08</b>
+                    </div>
+                    <div class="sidebar-item-title">
+                        Orientações básicas
+                    </div>
+                </a>
+            </div>
+            <div class="sidebar-item">
+                <a href="#relato" class="d-flex">
+                    <div class="sidebar-item-icon  text-center">
+                        <b>09</b>
+                    </div>
+                    <div class="sidebar-item-title">
+                        Relato de caso clínico
+                    </div>
+                </a>
+            </div>
+            <div class="sidebar-item">
+                <a href="#exercicios" class="d-flex">
+                    <div class="sidebar-item-icon  text-center">
+                        <b>10</b>
+                    </div>
+                    <div class="sidebar-item-title">
+                        Exercícios interativos
+                    </div>
+                </a>
+            </div>
+            <div class="sidebar-item">
+                <a href="#referencias" class="d-flex">
+                    <div class="sidebar-item-icon  text-center">
+                        <b>11</b>
+                    </div>
+                    <div class="sidebar-item-title">
+                        Referências
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- BOTOES CARROSEL -->
+        <div class="d-flex justify-content-around px-4">
+            <button type="button" class="btn-sidebar-icon" onclick="window.open('creditos.html','_self')">
+                <i class="bi bi-door-open-fill"></i>
+            </button>
+            </button>
+            <button type="button" class="btn-sidebar-icon" data-bs-toggle="modal" data-bs-target="#instrucao_navegacao">
+                <i class="bi bi-exclamation-circle"></i>
+            </button>
+        </div>
+    </div>
+
+    <div id="capa" class="background-image padding-x-container py-5 bg-river">
+        <div class="row pt-mobile-5">
+            <div class="col-md-6 d-block my-auto">
+                <div class="padding-container">
+                    <div class="d-flex pb-2 justify-content-center">
+                        <img src="./image/logos_capa.svg" alt="logos" class="pb-lg-0 img-fluid">
+                    </div>
+                    <span class="mx-auto d-block sub-titulo-capa">PARÂMETROS, DEFINIÇÕES E FORMAÇÕES DOS</span>
+                    <span class="titulo-rio mx-auto d-block">RIOS</span>
+                    <span class="mx-auto d-block sub-titulo-capa">
+                        <p>PROCESSOS GEOLÓGICOS QUE MOLDAM A PAISAGEM </p>
+                    </span>
+                    <span class="texto-capa">
+                        <p class="primary-dark">Principais características, origem, fluxo, bacias hidrográficas e
+                            padrões de drenagem.</p>
+                    </span>
+
+                    <div class="row">
+                        <div class="d-flex justify-content-between mb-4">
+                            <button class="button btn-col-2 btn-outline"
+                                onclick="window.open('contribuicoes.html', '_self')">Contribuições</button>
+                            <button class="button btn-col-2 btn-outline" data-bs-toggle="modal"
+                                data-bs-target="#instrucao_navegacao">Ajuda</button>
+                        </div>
+                        <button class="button btn-col-2 btn-secondary w-100"
+                            onclick="window.location.href='#sobre'">Iniciar</button>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="instrucao_navegacao" tabindex="-1" aria-hidden="true"
+                        data-bs-keyboard="false">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content modal-conteudo">
+                                <div class="mx-auto border-0">
+                                    <button type="button" class="btn-close bg-light rounded-circle p-3"
+                                        data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="pt-3 text-justify">
+                                    <p class="py-2 bold text-center">Ajuda para navegação</p>
+                                    <p>Você pode modificar a exibição do conteúdo conforme o zoom do seu navegador,
+                                        pressione:</p>
+                                    <div class="text-center">
+                                        <p><kbd>CTRL</kbd> + <kbd>+</kbd> : Ampliar o zoom</p>
+                                        <p><kbd>CTRL</kbd> + <kbd>-</kbd> : Reduzir o zoom</p>
+                                    </div>
+                                    <p>Você também pode clicar no ícone localizado no canto superior direito do material
+                                        para explorar livremente usando o menu.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex justify-content-end">
+                <div class="position-relative w-100 my-auto">
+                    <img src="image/fundo_capa.png" alt="" class="rio">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="sobre" class="container-fluid pt-5 bg-primary-dark">
+        <p class="titulo-material text-light text-center">INFORMAÇÕES</p>
+        <div class="carousel-container">
+            <div id="carouselExampleIndicators" class="carousel slide carousel-person" data-bs-ride="false">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active circle" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        class="circle" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        class="circle" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                        class="circle" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner scrool-item">
+                    <div class="carousel-item active">
+                        <div class="">
+                            <div class="row justify-content-center text-justify">
+                                <div class="col-12 col-lg-6  text-light pt-md-0">
+                                    <div class="pb-md-0 d-flex justify-content-start">
+                                        <span class="titulo  my-auto mx-2">
+                                            <p>EM RELAÇÃO AO CURSO</p>
+                                        </span>
+                                    </div>
+                                    <p>Os textos foram alterados por "Lorem Ipsum" para resguardar informações
+                                        sensíveis, uma vez que o foco é demonstrar a estrutura e a lógica subjacentes.
+                                    </p>
+                                    <p>Este curso foi desenvolvido com o objetivo de expandir os conhecimentos em uma
+                                        área específica, adotando um formato autoinstrucional para permitir
+                                        flexibilidade aos profissionais de saúde em seu acesso. Com uma duração total de
+                                        45 horas, o curso é dividido em quatro unidades de ensino distintas. Ao final,
+                                        os participantes são submetidos a uma avaliação objetiva e têm a oportunidade de
+                                        obter certificação online.
+                                    </p>
+                                    <P>
+                                        Essa iniciativa é resultado de uma colaboração entre diferentes instituições,
+                                        buscando promover o desenvolvimento profissional e a educação continuada na área
+                                        da saúde.
+                                    </P>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="">
+                            <div class="row justify-content-center text-justify">
+                                <div class="col-12 col-md-6 pt-md-0 text-light">
+                                    <div class="d-flex justify-content-start">
+                                        <span class="titulo-capa  my-auto mx-2">METAS DO CURSO</span>
+                                    </div>
+                                    <ul class="py-md-0 py-lg-">
+                                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae
+                                            ante non urna blandit elementum. Donec ut quam eu libero maximus convallis.
+                                            Aliquam erat volutpat. Integer consectetur nunc non quam sagittis, ut
+                                            volutpat purus interdum. Nullam a est tincidunt, ultricies nisl nec,
+                                            lobortis purus;
+                                        </li>
+                                        <li>Phasellus interdum orci vel felis molestie, nec lacinia nisi fringilla. Sed
+                                            varius, est vel aliquet hendrerit, ipsum purus placerat est, vel elementum
+                                            nulla mauris id nisl;</li>
+                                        <li>Vivamus vel ex sit amet tortor fringilla vulputate. Maecenas id enim id
+                                            risus vestibulum mattis ac et elit;</li>
+                                        <li>Curabitur dapibus enim a neque vehicula, non condimentum risus efficitur.
+                                            Nulla facilisi. Curabitur consequat arcu vel nisl pellentesque, ac euismod
+                                            purus consequat.
+                                        </li>
+                                        <li>Curabitur dapibus enim a neque vehicula, non condimentum risus efficitur.
+                                            Nulla facilisi. Curabitur consequat arcu vel nisl pellentesque, ac euismod
+                                            purus consequat.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="">
+                            <div class="row justify-content-center">
+                                <div class="col-12 col-md-6 pt-md-0 text-light">
+                                    <ul class="py-lg- py-0">
+                                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit;
+                                        </li>
+                                        <li>Mauris ultricies, justo eu efficitur convallis, urna mi convallis nisi, et
+                                            facilisis odio lorem eget nunc;</li>
+                                        <li>Integer sit amet tellus sed nulla volutpat rhoncus nec a sapien. Vestibulum
+                                            non velit in ipsum maximus gravida. Sed quis lorem rutrum, pharetra risus
+                                            nec, tincidunt ligula.</li>
+                                        <li>Phasellus nec lorem fermentum, ultrices quam sed, lobortis sem. Nullam sit
+                                            amet vestibulum metus;</li>
+                                        <li>Nullam in lacus in velit ultrices volutpat; </li>
+                                        <li>Integer sit amet tellus sed nulla volutpat rhoncus nec a sapien. Vestibulum
+                                            non velit in ipsum maximus gravida. Sed quis lorem rutrum, pharetra risus
+                                            nec, tincidunt ligula.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-6 pt-md-0 pt-lg-5 text-light">
+                                <p class="titulo-capa text-lg-start text-center">CARGA HORÁRIA DE ESTUDO</p>
+                                <p class="text-lg-start text-center">50 horas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="definicao" class="container-fluid padding-x-container py-5">
+        <p class="titulo-unidade font-dark text-center">UNIDADE</p>
+        <p class="sub-titulo pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est-tenetur</p>
+
+        <div id="quadro" class="">
+            <p class="titulo font-dark text-start pt-0 pt-lg-3">Lorem ipsum e dolor sit amet</p>
+            <div class="text-justify">
+                <p class="py-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut debitis sint sit excepturi
+                    nisi consequatur eum tempora nesciunt obcaecati enim. Aspernatur nam qui nisi illo assumenda sequi,
+                    possimus reiciendis ullam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum
+                    minus, itaque sunt aut deserunt molestiae aliquam velit vitae rerum repudiandae quisquam magnam
+                    praesentium.
+                </p>
+                <span class="text-center">
+                    <p>Clique nos pontos vermelhos para interagir</p>
+                </span>
+                <div class="container padding-x-container position-relative">
+                    <img src="./image/human-body.png" alt="Ciclo de transmissão" class="d-block mx-auto w-25"
+                        usemap="#ciclo_transmissao">
+                    <button type="button" id="btn-ciclo-1" class="btn-ciclo-mpox btn-ciclo-1" data-bs-toggle="tooltip"
+                        data-bs-placement="top" data-bs-target="#tooltip1" aria-label="Forma rara de salmonelose"
+                        data-bs-original-title="<b>Forma rara de salmonelose:</b><br>Causada por Salmonella enterica sorovar Paratyphi A, B e C."
+                        data-bs-html="true">
+                    </button>
+
+                    <button type="button" id="btn-ciclo-2" class="btn-ciclo-mpox btn-ciclo-2" data-bs-toggle="tooltip"
+                        data-bs-placement="right" aria-label="Febre tifoide"
+                        data-bs-original-title="<strong>Febre tifoide:</strong><br>Erupção cutânea" data-bs-html="true">
+                    </button>
+
+                    </button>
+                    <button type="button" id="btn-ciclo-3" class="btn-ciclo-mpox btn-ciclo-3" data-bs-toggle="tooltip"
+                        data-bs-placement="top" aria-label="Infecção parasitária"
+                        data-bs-original-title="<b>Infecção parasitária do cólon:</b><br>causada pela ameba Entamoeba histolytica"
+                        data-bs-html="true">
+                    </button>
+
+                    <button type="button" id="btn-ciclo-4" class="btn-ciclo-mpox btn-ciclo-4" data-bs-toggle="tooltip"
+                        data-bs-placement="left" aria-label="Infecção do fígado"
+                        data-bs-original-title="<b>Infecção do fígado:</b><br>Altamente contagiosa, causada pelo vírus da hepatite A."
+                        data-bs-html="true">
+                    </button>
+
+                    <button type="button" id="btn-ciclo-5" class="btn-ciclo-mpox btn-ciclo-5" data-bs-toggle="tooltip"
+                        data-bs-placement="bottom" aria-label="Cólera"
+                        data-bs-original-title="<b>Cólera:</b><br>Doença bacteriana infecciosa intestinal aguda, transmitida por contaminação fecal-oral direta ou pela ingestão de água ou alimentos contaminados."
+                        data-bs-html="true">
+                    </button>
+                    <button type="button" id="btn-ciclo-6" class="btn-ciclo-mpox btn-ciclo-6" data-bs-toggle="tooltip"
+                        data-bs-placement="bottom" aria-label="Febre tifoide"
+                        data-bs-original-title="<b>Febre tifoide:</b><br>Dores musculares" data-bs-html="true">
+                    </button>
+                    <button type="button" id="btn-ciclo-7" class="btn-ciclo-mpox btn-ciclo-7" data-bs-toggle="tooltip"
+                        data-bs-placement="bottom" aria-label="Infecção intestinal"
+                        data-bs-original-title="<b>Infecção intestinal:</b><br>Causada pelo parasita giárdia."
+                        data-bs-html="true">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-lg-5">
+            <span class="text-center">
+                <p>Clique nas abas para interagir</p>
+            </span>
+            <div class="d-flex" role="tablist">
+                <div class="w-100 d-flex align-items-bottom sub-titulo" role="presentation">
+                    <button class="btn-panel w-100 active" data-bs-toggle="tab" data-bs-target="#estrategia_01"
+                        type="button" role="tab" aria-selected="true">Lorem ipsum</button>
+                </div>
+                <div class="w-100 d-flex align-items-bottom sub-titulo" role="presentation">
+                    <button class="btn-panel w-100" data-bs-toggle="tab" data-bs-target="#estrategia_02" type="button"
+                        role="tab" aria-selected="false" tabindex="-1">Lorem ipsum dolor</button>
+                </div>
+
+            </div>
+            <div class="tab-content px-0 px-lg-5 pt-3 text-justify">
+                <div class="tab-pane fade active show" id="estrategia_01" role="tabpanel" tabindex="0">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores minima eaque consequatur unde
+                        nisi, ipsum corporis quod dolor aut assumenda necessitatibus illo expedita corrupti voluptatum
+                        eum molestiae harum. Explicabo, quos? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Exercitationem nam nihil non aut blanditiis quo ex, nesciunt harum, ullam sit hic atque minima
+                        placeat. Nulla dolor esse quia magnam magni! Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Inventore dolorem cupiditate unde, deleniti architecto, quae cumque ea aut, quos
+                        blanditiis eos ullam eligendi at reiciendis. Explicabo adipisci a quisquam et! Lorem ipsum dolor
+                        sit amet consectetur adipisicing elit. Voluptatum, voluptatem voluptatibus! At nemo voluptatibus
+                        commodi culpa facilis quibusdam nulla quis, dolorem repellat aspernatur nostrum asperiores
+                        nesciunt vitae doloremque rerum incidunt.</p>
+                </div>
+
+                <div class="tab-pane fade" id="estrategia_02" role="tabpanel" tabindex="0">
+                    <span>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum amet doloribus, cupiditate
+                            ipsum dolor maxime consequatur non mollitia, deserunt facilis labore autem magni officia
+                            esse, sequi commodi ratione id expedita. Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Reiciendis quia animi.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis officiis dolorem atque
+                            saepe praesentium eum dolores harum maiores quasi doloribus? Vero magnam aliquid sit
+                            deleniti nobis quo architecto iusto tempore! Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Minima fugiat impedit ipsum architecto accusantium rem suscipit pariatur,
+                            dolorem sapiente repellendus illo assumenda consectetur.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi velit atque quaerat
+                            (necessitatibus) minima hic exercitationem consectetur corrupti laudantium consequuntur!
+                            Accusantium laboriosam illum eaque! Rerum et a incidunt exercitationem quam. Lorem ipsum
+                            dolor sit amet consectetur adipisicing elit. (Quidem quasi fugiat) dignissimos ipsam.
+                            Consectetur, deleniti cupiditate? Officia, aut illum quae aliquam nobis officiis. Eos magnam
+                            eum atque, nobis consequatur amet. (Lorem ipsum) dolor sit amet consectetur adipisicing
+                            elit.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi velit atque quaerat
+                            (necessitatibus) minima hic exercitationem consectetur corrupti laudantium consequuntur!
+                            Accusantium laboriosam illum eaque! Rerum et a incidunt exercitationem quam. Lorem ipsum
+                            dolor sit amet consectetur adipisicing elit. (Quidem quasi fugiat) dignissimos ipsam.
+                            Consectetur, deleniti cupiditate? Officia, aut illum quae aliquam nobis officiis. Eos magnam
+                            eum atque, nobis consequatur amet. (Lorem ipsum) dolor sit amet consectetur adipisicing
+                            elit.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum amet doloribus, cupiditate
+                            ipsum dolor maxime consequatur non mollitia, deserunt facilis labore autem magni officia
+                            esse, sequi commodi ratione id expedita. Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Reiciendis quia animi.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis officiis dolorem atque
+                            saepe praesentium eum dolores harum maiores quasi doloribus? Vero magnam aliquid sit
+                            deleniti nobis quo architecto iusto tempore! Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Minima fugiat impedit ipsum architecto accusantium rem suscipit pariatur,
+                            dolorem sapiente repellendus illo assumenda consectetur.
+                        </p>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <p class="text-center titulo-capa">Mapa interativo que informa a dominialidade dos principais rios do Brasil</p>
+        <img class="img-fluid col-12 d-flex col-12 d-flex justify-content-center img-centro w-75"
+            src="image/mapa-rios.PNG" alt="Guia laboratorial">
+        <p class="text-center text-s"> <small><br><br>Disponível em <a
+                    href="https://portal1.snirh.gov.br/ana/apps/webappviewer/index.html?id=ef7d29c2ac754e9890d7cdbb78cbaf2c"
+                    target="_blank">https://portal1.snirh.gov.br</a></small></p>
+        <p id="diagnostico" class="titulo font-dark text-start pt-3"><br>Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Temporibus nobis</p>
+        <div class="text-justify">
+            <p class="py-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, impedit harum aliquam quia
+                nulla eaque nihil numquam provident consequuntur voluptas odit, nostrum ad atque aliquid amet ratione!
+                Sint, non esse? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quisquam nesciunt suscipit
+                accusamus, deleniti sed magnam neque quasi sunt dolore, incidunt illum deserunt ab! Pariatur maxime
+                rerum officiis necessitatibus laudantium. Lorem, ipsum dolor sit;
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iste officiis animi at. In molestias
+                quis officiis voluptates aliquid voluptatum illo. Magni quos unde eius voluptatibus ut explicabo laborum
+                fugiat. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis aliquam nam debitis,
+                aspernatur placeat praesentium voluptas id at neque nemo amet ex natus nulla hic ad iusto autem corporis
+                laborum.
+            </p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus illo:
+            <ul>
+                <li>
+                    Lorem ipsum dolor.
+                </li>
+                <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing eli.
+                </li>
+                <li>
+                    Lorem ipsum dolor sit amet (consectetur).
+                </li>
+                <li>
+                    Lorem ipsum.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="bg-aux box-saiba-mais padding-container text-center">
+        <img src="./image/drop.svg" class="active" alt="Exclamação" data-animation="circle-saiba-mais">
+        <div class="text-center ">
+            <p class="pt-3">Informações</p>
+            <p class="titulo text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum inventore
+                fugit sunt assumenda temporibus quam ipsam, aliquid adipisci eveniet alias, itaque a aliquam.
+        </div>
+    </div>
+
+    <div class="padding-x-container pt-5">
+        <p id="laboratorial" class="titulo text-justify">Lorem ipsum dolor sit itrus <i>AMET</i></p>
+        </p>
+        <p class="text-justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio fugiat repudiandae deleniti porro ratione
+            alias dolore error sed minus quam quaerat, maxime reiciendis laboriosam, quidem, necessitatibus laudantium
+            consectetur. Id, numquam? Lorem ipsum dolor sit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo fugiat labore beatae inventore soluta error
+            esse, facere ullam nostrum sint mollitia ipsa laudantium vero deleniti aut laboriosam quam. Quas, dolore.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, adipisci aliquid doloribus nostrum
+            perspiciatis.
+        </p>
+        <br>
+        <img class="img-fluid d-block mx-auto" src="image/amazonas.png" alt="">
+        <p class="text-center"> <small><a
+                    href="https://tunesambiental.com/amazonas-rio-brasileiro-que-surgiu-na-africa/"
+                    target="_blank">https://tunesambiental.com/amazonas-rio-brasileiro</a></small> </p>
+    </div>
+    <div id="amostras" class="bg-primary-light font-dark padding-x-container py-5 overflow-hidden text-justify">
+        <p class="titulo text-">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod itaque rem nemo QUAS
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dignissimos, temporibus accusantium ad in
+            perferendis eaque fugiat ab minus quasi aspernatur magni, praesentium enim asperiores placeat animi odit,
+            sint
+            maiores! guia-para-diagnostico-laboratorial-em-saude-publica Lorem ipsum, dolor sit amet consectetur
+            adipisicing
+            elit. Consectetur natus aperiam quisquam eos officiis placeat, consequuntur deleniti vitae nesciunt earum!
+            Nulla
+            rem quibusdam maiores ab, fugit velit voluptates dolores.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt nisi deleniti similique quaerat ut
+            accusantium dolor ratione beatae omnis. Similique maiores nam culpa? Nisi, blanditiis autem ea ex officia
+            expedita! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ullam consectetur perferendis veniam
+            modi eum deserunt debitis, minus nulla nobis voluptatibus veritatis aut voluptate magni commodi obcaecati
+            reiciendis non vitae? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum debitis minima amet
+            quisquam molestias quis vel atque. Non iusto eum commodi fugiat accusamus, incidunt itaque soluta placeat
+            consequuntur ut? Assumenda.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt nisi deleniti similique.
+        </p>
+        <div class="w-lg-75 mx-auto my-md-0 my-2 accordion pt-md-5" id="accordion_remedios">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button active" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#accordion_remedios_1" aria-expanded="false" aria-controls="accordion_remedios">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ipsam porro (consequatur)
+                            repudiandae consectetur quos corrupti? Earum esse, rem ad perferendis qui, aperiam animi
+                            (fuga)</p>
+                    </button>
+                </h2>
+                <div id="accordion_remedios_1" class="accordion-collapse collapse show"
+                    data-bs-parent="#accordion_remedios">
+                    <div class="accordion-body ">
+                        <p class="pb-2">
+                        <p><b>Lorem ipsum:</b> Lorem ipsum dolor sit amet (consectetur).</p>
+                        <p><b>Lorem ipsum dolor:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+                            quasi adipisci recusandae voluptate, reiciendis ut (architecto) quis suscipit dignissimos
+                            rerum, quia unde quae quo error nulla veritatis molestiae consectetur quisquam? Lorem ipsum
+                            dolor sit amet (consectetur) adipisicing elit. Voluptatibus dolor totam repudiandae non
+                            (repellat) excepturi cum. Cumque pariatur, dignissimos vel.<br>
+                        </p><b>Lorem ipsum dolor sit:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+                        odit voluptates maxime blanditiis recusandae eveniet sequi dignissimos dolores aliquam deserunt,
+                        reiciendis hic esse doloribus ullam aperiam, laudantium sapiente, at veritatis? Lorem ipsum
+                        dolor sit amet consectetur.</p>
+                        <p><b>Lorem ipsum dolor sit amet consectetur:</b> Lorem ipsum dolor, sit amet consectetur
+                            adipisicing elit. Placeat, animi eum. Voluptatem inventore ea natus.</p>
+                        <p><b>Lorem:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquam iusto
+                            dolorum a dolore. Laudantium voluptas, nemo facilis odio inventore.
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta neque magnam, impedit eius
+                            similique deleniti iure sequi soluta sint nisi rerum numquam reprehenderit ut hic obcaecati
+                            eos, temporibus amet vero. Lorem ipsum.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#accordion_remedios_2" aria-expanded="false" aria-controls="accordion_remedios">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem numquam quibusdam quaerat
+                        accusantium qui quae nam possimus asperiores, minus ipsum soluta unde.
+                    </button>
+                </h2>
+                <div id="accordion_remedios_2" class="accordion-collapse collapse" data-bs-parent="#accordion_remedios">
+                    <div class="accordion-body ">
+                        <p class="pb-1">
+                            <b>Lorem ipsum dolor:</b> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque
+                            porro maiores esse ipsum reiciendis eveniet rerum doloribus sequi itaque consequatur
+                            assumenda accusamus soluta, inventore, laudantium nostrum totam dolorum culpa atque. Lorem
+                            ipsum dolor, sit amet consectetur.
+                        </p>
+                        <p>
+                            <b>Lorem ipsum dolor sit amet:</b> Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Optio minima illum in corrupti non? Quis, ducimus omnis quibusdam dolores iure fuga, vero
+                            dignissimos officia corrupti obcaecati (rerum ipsa) perferendis porro! (Lorem ipsum dolor)
+                            sit amet consectetur adipisicing elit. Aperiam, consequatur ut illum minima dolorem nihil
+                            officia eius ad asperiores, nulla eveniet vitae veniam esse totam praesentium, dolorum
+                            impedit inventore cum! Lorem ipsum dolor sit amet consectetur adipisicing elit. (Eligendi)
+                            ipsum eos sed nemo cupiditate nulla a quibusdam expedita ab reiciendis iste magnam in,
+                            possimus repudiandae consequatur unde qui hic fugit. Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. (Facere neque) necessitatibus repellat placeat dolor praesentium a itaque
+                            perferendis, quasi impedit, hic cumque totam enim inventore, dolores pariatur suscipit minus
+                            libero! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa itaque quasi
+                            voluptate maiores quisquam, minus aut ex.
+
+                        </p>
+                        <p>
+                            <b>Lorem ipsum dolor:</b> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque
+                            porro maiores esse ipsum reiciendis eveniet rerum doloribus sequi itaque consequatur
+                            assumenda accusamus soluta, inventore, laudantium nostrum totam dolorum culpa atque. Lorem
+                            ipsum dolor, sit amet consectetur.
+                        </p>
+                        <p>
+                            <b>Lorem ipsum, dolor sit amet consectetur:</b> Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Vel dicta tenetur vero quam adipisci perferendis dolores distinctio atque
+                            quidem dolorem corrupti.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#accordion_remedios_3" aria-expanded="false" aria-controls="accordion_remedios">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi assumenda laudantium ducimus
+                        doloribus eius recusandae quo et repudiandae atque quia inventore perferendis.
+                    </button>
+                </h2>
+                <div id="accordion_remedios_3" class="accordion-collapse collapse" data-bs-parent="#accordion_remedios">
+                    <div class="accordion-body ">
+                        <p class="pb-1">
+                            <b>Lorem ipsum dolor:</b> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum
+                            sapiente, exercitationem facilis dolores, adipisci consectetur odio nihil cumque ex
+                            perspiciatis quisquam aliquid quam at facere minima natus commodi repellat nesciunt.
+                        </p>
+                        <p>
+                            <b>Lorem ipsum, dolor sit amet:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Laboriosam, labore in repellendus facilis sit, eligendi beatae itaque quaerat mollitia est
+                            ducimus minus ipsum dolores facere placeat velit officia libero soluta? Lorem ipsum dolor
+                            sit amet consectetur adipisicing elit. Odio aliquid rem, officiis nisi dicta, tempora, amet
+                            eveniet excepturi maxime delectus provident impedit totam possimus harum. Vitae laboriosam
+                            totam quis soluta? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, sit
+                            minima? Veritatis voluptate fugiat eligendi qui eveniet ipsa mollitia dolor, tempore
+                            aspernatur dignissimos! Voluptatibus iusto, officiis enim illo corrupti reiciendis. Lorem
+                            ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, saepe beatae voluptatum
+                            deserunt unde doloremque sit, alias doloribus in repellat aspernatur, vitae nesciunt.
+                        </p>
+                        <p>
+                            <b>Lorem ipsum, dolor:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Laboriosam, labore in repellendus facilis sit, eligendi beatae itaque quaerat mollitia est
+                            ducimus minus ipsum dolores facere placeat velit officia libero soluta? Lorem ipsum dolor
+                            sit amet consectetur adipisicing elit. Odio aliquid rem.
+                        </p>
+                        <p>
+                            <b>Lorem ipsum:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
+                            labore in repellendus facilis sit.
+                        </p>
+                        <p>
+                            <b>Lorem:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, labore in
+                            repellendus facilis sit, eligendi beatae itaque quaerat mollitia est ducimus minus ipsum
+                            dolores facere placeat velit officia.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#accordion_remedios_4" aria-expanded="false" aria-controls="accordion_remedios">
+                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                    </button>
+                </h2>
+                <div id="accordion_remedios_4" class="accordion-collapse collapse" data-bs-parent="#accordion_remedios">
+                    <div class="accordion-body ">
+                        <p class="pb-1">
+                            <b>Dolor sit amet:</b> Dolor/sit Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Ipsa non architecto commodi nam unde (assumenda quae) sapiente sunt consectetur ea
+                            aspernatur porro, ex odio. Architecto sapiente temporibus.
+                        </p>
+                        <p>
+                            <b>Architecto commodi nam:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                            enim quibusdam, ipsam totam atque cupiditate minima, eligendi nostrum recusandae ullam earum
+                            fugit similique reiciendis quos excepturi nihil voluptas? Porro, incidunt! Lorem ipsum dolor
+                            sit, amet consectetur adipisicing elit. Quas modi vero ipsam nesciunt tempore iste, expedita
+                            eaque minus nostrum deserunt optio cumque consequatur libero atque nam praesentium vitae
+                            quisquam quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est aliquam cumque
+                            iusto numquam at quisquam non.
+                        </p>
+                        <p>
+                            <b>Consectetur adipisicing:</b> Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Expedita quos repellendus est officia cumque, recusandae odit voluptatem autem
+                            exercitationem mollitia quia, aperiam totam eligendi cupiditate reprehenderit delectus.
+                            Odio, eveniet quam! Lorem, ipsum dolor sit amet.
+                        </p>
+                        <p>
+                            <b>Lorem ipsum dolor sit:</b> Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Expedita quos repellendus est officia cumque.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="guillain" class="padding-x-container text-justify bg-primary-dark text-light py-5 overflow-hidden">
+        <div class="row">
+            <div class="col-12 col-lg-6 pe-lg-5 order-first order-last order-xl-first">
+                <p>
+                <p class="titulo">Lorem ipsum dolor sit amet - ABC</p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem rem ad ipsa? Tempora, error placeat ab
+                neque dicta dolorem minus commodi, unde a quaerat magni veniam suscipit incidunt laboriosam vel. Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Veniam ab distinctio perferendis numquam, error
+                quaerat rerum ipsum delectus doloremque. Nam consectetur ullam labore. Quas, saepe. Numquam
+                necessitatibus aperiam animi nesciunt! Lorem ipsum, dolor sit amet.
+                </p>
+                <p>
+                    Veniam ab distinctio perferendis numquam, error quaerat rerum ipsum delectus doloremque. Nam
+                    consectetur ullam labore. Quas, saepe. Numquam necessitatibus aperiam animi nesciunt! Lorem ipsum,
+                    dolor sit amet. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus ullam tenetur iure
+                    omnis distinctio enim voluptatibus, quidem, atque quod ad adipisci reiciendis nisi fuga, voluptas
+                    reprehenderit odit quae architecto magni!
+                </p>
+            </div>
+            <div
+                class="col-12 col-lg-6 d-flex flex-wrap justify-content-center order-first order-xl-last pe-lg-5 pe-xl-0">
+                <img class="img-fluid img-dor" src="image/rio-1.png" alt="sindrome guillan-barre"
+                    data-animation="right-to-left">
+            </div>
+        </div>
+    </div>
+
+    <div id="microcefalia" class="padding-x-container text-justify bg-primary-light text-dark py-5 overflow-hidden">
+        <div class="row">
+            <div class="col-12 col-lg-6 d-flex flex-wrap justify-content-center pe-0 pe-lg-5">
+                <img class="img-fluid" src="image/rio-2.png" alt="sindrome guillan-barre"
+                    data-animation="left-to-right">
+            </div>
+            <div class="col-12 col-lg-6">
+                <p>
+                <p class="titulo">VENIAM ab distinctio</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem rem ad ipsa? Tempora, error placeat
+                    ab neque dicta dolorem minus commodi, unde a quaerat magni veniam suscipit incidunt laboriosam vel.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ab distinctio perferendis numquam,
+                    error quaerat rerum ipsum delectus doloremque. Nam consectetur ullam labore.</p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nulla numquam harum non atque illo eius quas neque omnis doloribus maxime, eveniet molestias inventore magni voluptatibus perspiciatis. Asperiores, voluptates quidem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde modi earum officia optio qui consequatur fugit doloremque, non nihil voluptate doloribus ducimus enim, quaerat odio dolore commodi! Ipsum, nostrum culpa? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis cupiditate consequuntur exercitationem non mollitia nulla harum quibusdam ratione quos a dignissimos eius fugit, illum officia? Mollitia exercitationem molestias qui asperiores?
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ipsam saepe obcaecati sequi error sed harum? Quibusdam inventore molestiae optio illum cupiditate obcaecati, unde totam quam reiciendis id! Molestias, obcaecati. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe id voluptates voluptatem praesentium doloribus vero recusandae, nemo, maxime et dolor earum possimus a itaque vitae sunt nostrum odio omnis exercitationem.
+                    </p>
+            </div>
+        </div>
+        <br>
+        <span>
+            <p class="text-start"><small>Disponível em: <a
+                        href="https://unsplash.com/pt-br/s/fotografias/river?license=free"
+                        target="_blank">https://unsplash.com/pt-br</a>
+            </p></small>
+        </span>
+        <br><br>
+        <span>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. In reiciendis quidem maiores veniam rem
+                temporibus qui ab cum quasi iste? Iste dolor possimus omnis beatae nostrum exercitationem similique
+                tenetur repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias debitis
+                accusantium, cum neque reiciendis, officia, veniam quis labore iusto facilis officiis natus sunt!
+                Nostrum voluptatum delectus quo perferendis neque. Lorem, ipsum dolor sit amet consectetur adipisicing
+                elit. Sint tempore consectetur quam dignissimos voluptatem vel quos totam ipsa aspernatur. Temporibus
+                distinctio ipsam odit nisi accusamus repellendus sit! Velit, suscipit ex.
+            </p>
+        </span>
+        <br><br>
+        <div id="rientacoes" class="text-justify">
+            <p class="titulo text-start">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In reiciendis quidem
+                maiores veniam
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. In reiciendis quidem maiores veniam rem
+                temporibus qui ab cum quasi iste? Iste dolor possimus omnis beatae nostrum exercitationem similique
+                tenetur repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias debitis
+                accusantium, cum neque reiciendis, officia, veniam quis labore iusto facilis officiis natus sunt!
+                Nostrum voluptatum delectus quo perferendis neque. Lorem, ipsum dolor sit amet consectetur adipisicing
+                elit. Sint tempore consectetur quam dignissimos voluptatem vel quos totam ipsa aspernatur. Temporibus
+                distinctio ipsam odit nisi accusamus repellendus sit! Velit, suscipit ex.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. In reiciendis quidem maiores veniam rem
+                temporibus qui ab cum quasi iste? Iste dolor possimus omnis beatae nostrum exercitationem similique
+                tenetur repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias debitis
+                accusantium, cum neque reiciendis, officia.
+            </p>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint tempore consectetur quam dignissimos
+                voluptatem vel quos totam ipsa aspernatur. Temporibus distinctio ipsam odit nisi accusamus repellendus
+                sit! Velit, suscipit ex. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque doloremque
+                quo, laboriosam aliquid voluptatem amet quae explicabo debitis in quisquam, necessitatibus illum nobis
+                magnam id? Ab pariatur assumenda nulla eaque.
+            </p>
+            <br>
+            <p class="titulo">Orientações básicas sobre a conduta com gestantes diagnosticadas com infecção pelo ZIKV
+            </p>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint tempore consectetur quam dignissimos
+                voluptatem vel quos totam ipsa aspernatur. Temporibus distinctio ipsam odit nisi accusamus repellendus
+                sit! Velit, suscipit ex. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque doloremque
+                quo, laboriosam aliquid voluptatem amet quae explicabo debitis in quisquam, necessitatibus illum nobis
+                magnam id? Ab pariatur assumenda nulla eaque.
+            </p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint tempore consectetur quam dignissimos
+                voluptatem vel quos totam ipsa aspernatur. Temporibus distinctio ipsam odit nisi accusamus repellendus
+                sit! Velit, suscipit ex. Lorem ipsum.
+            </p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint tempore consectetur quam dignissimos
+                voluptatem vel quos totam ipsa aspernatur. Temporibus distinctio ipsam odit nisi accusamus repellendus
+                sit! Velit, suscipit ex. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque doloremque
+                quo, laboriosam aliquid voluptatem amet quae explicabo debitis in quisquam, necessitatibus illum nobis
+            </p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint tempore consectetur quam dignissimos
+                voluptatem vel quos totam ipsa aspernatur. Temporibus distinctio ipsam odit nisi accusamus repellendus
+                sit! Velit, suscipit ex. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque doloremque
+                quo, laboriosam aliquid voluptatem amet quae explicabo debitis in quisquam, necessitatibus illum nobis
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolor aspernatur odio inventore
+                quisquam, iste vel voluptas earum quibusdam quod hic alias praesentium cupiditate aliquam. Eos
+                cupiditate tempore repellat nam! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci,
+                sunt? Quod id ad aliquid nobis a reiciendis incidunt labore dolorem illo ea et doloremque in, suscipit,
+                soluta qui dolor cumque! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit,
+                aspernatur voluptatem. Debitis esse repellendus magnam maxime dolores nemo impedit.
+            </p>
+            <div id="relato" class="text-center pt-5">
+                <p class="titulo text-">Cartão interativo abaixo</p>
+                <p>
+                    Clique no cartão para interagir!
+                </p>
+            </div>
+            <!-- CARD -->
+            <button class="card bg-primary-light w-100 w-lg-50 mx-auto not-flipped" onclick="virar_card(this)">
+                <div class="card-front d-flex flex-column py-3 bg-primary-dark w-100 rio-3">
+                    <div class="d-flex justify-content-end align-items-end flex-grow-1">
+                        <i class="bi bi-arrow-repeat icon-s pe-3"></i>
+                    </div>
+                </div>
+                <div
+                    class="container-fluid card-back d-flex flex-column padding-x-container py-5 bg-primary-dark w-100 scrool-item">
+                    <p class="text-card text-start"><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+                            molestiae amet quisquam labore laboriosam omnis quos facilis dolorem sequi sed tempore, eum
+                            modi natus cum unde, quae, atque molestias quas. Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Magni, iusto sunt nobis quisquam facere laborum deserunt rerum. Quam culpa
+                            laboriosam eos hic tempore dicta, optio earum quasi voluptatem ipsa tempora? Lorem ipsum
+                            dolor sit, amet consectetur adipisicing elit. Aperiam, mollitia minus. Magni assumenda cum
+                            vero quo aliquid, nulla explicabo, nostrum nihil quidem ut, eum inventore suscipit porro
+                            exercitationem saepe hic? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
+                            dolores doloribus odio quidem reiciendis numquam ex quibusdam vel minus libero, eos
+                            pariatur. Fugit velit quisquam impedit delectus veniam consequatur architecto. Lorem ipsum
+                            dolor sit amet consectetur adipisicing elit. Ipsam, repudiandae sint! Reiciendis dolores
+                            sunt possimus similique.</i>
+                    </p>
+                    <p class="text-start">
+                        <b><i>Amet quisquam labore laboriosam omnis quos.</i></b>
+                    </p>
+                    <p class="text-start">
+                        <i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia molestiae amet quisquam labore
+                            (laboriosam).</i>
+                    </p>
+                    <p class="text-start">
+                        <i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, voluptas molestiae beatae
+                            ut saepe tempora voluptate temporibus et. Distinctio, quam! Vel error eveniet laudantium
+                            obcaecati dolores, voluptates repudiandae voluptas amet. Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Assumenda delectus nostrum vitae soluta architecto? Dolores
+                            eos quidem.</i>
+                    </p>
+                    <p class="text-start">
+                        <i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, cumque ullam repellat minus
+                            aut corrupti sit minima laborum, explicabo nam laudantium unde labore rerum exercitationem
+                            et. Tempora impedit quae fugiat.</i>
+                    </p>
+                </div>
+            </button>
+            <p class="pt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quibusdam adipisci hic
+                ducimus corporis consectetur optio, <a
+                    href="./documentos/dengue_classificacao_risco_manejo_paciente.pdf" target="_blank">ducimus corporis
+                    consectetur optio</a>, Dolores quibusdam adipisci hic ducimus corporis consectetur optio.</p>
+
+        </div>
+
+        <!-- PERGUNTAS -->
+        <div id="exercicios"
+            class="text-justify bg-primary-light font-dark overflow-hidden">
+            <span class="titulo">Exercícios interativos</span>
+            <div id="pergunta1" class="font-dark overflow-hidden">
+                <div class="text-light py-5 overflow-hidden">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="bg-primary-dark rounded-4 p-lg-5 pt-5">
+                                <div class="row g-0 ">
+                                    <div class="col-12 col-lg-6">
+                                        <div class="container-fluid pergunta pe-lg-5 text-start" id="pergunta1"
+                                            data-ja-respondeu="false">
+                                            <span class="titulo-pergunta">Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit. Molestias non:</span>
+                                            <div class="opcoes pt-3">
+                                                <label
+                                                    data-comentario="Correto, comentário sobre a alternativa 'a' da questão '1'."><input
+                                                        type="radio" name="q1" value="a"> <span>a</span>Alternativa
+                                                    'a'.</label>
+                                                <label
+                                                    data-comentario="Incorreto, comentário sobre a alternativa 'b' da questão '1'."><input
+                                                        type="radio" name="q1" value="b"> <span>b</span>Alternativa
+                                                    'b'.</label>
+                                                <label
+                                                    data-comentario="Incorreto, comentário sobre a alternativa 'c' da questão '1'."><input
+                                                        type="radio" name="q1" value="c"> <span>c</span>Alternativa
+                                                    'c'.</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <button class="button w-50 m-5 btn-aux-responder"
+                                            onclick="verificarResposta('pergunta1', 'a', true)">Responder</button>
+                                        <div class="retorno">
+                                            <p class="explicacao py-lg-0 p-sm-5"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="pergunta2" class="font-dark">
+                <div class="text-light pb-5 overflow-hidden">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="bg-primary-dark rounded-4 p-lg-5 pt-5">
+                                <div class="row g-0">
+                                    <div class="col-12 col-lg-6">
+                                        <div class="container-fluid pergunta pe-lg-5 text-start" id="pergunta2"
+                                            data-ja-respondeu="false">
+                                            <span class="titulo-pergunta">Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit. Ad:</span>
+                                            <div class="opcoes pt-3">
+                                                <label
+                                                    data-comentario="Incorreto, comentário sobre a alternativa 'a' da questão '2'."><input
+                                                        type="radio" name="q1" value="a"> <span>a</span>Alternativa
+                                                    'a'.</label>
+                                                <label
+                                                    data-comentario="Correto, comentário sobre a alternativa 'b' da questão '2'."><input
+                                                        type="radio" name="q1" value="b">
+                                                    <span>b</span>Alternativa 'b'.</label>
+                                                <label
+                                                    data-comentario="Incorreto, comentário sobre a alternativa 'c' da questão '2'."><input
+                                                        type="radio" name="q1" value="c"> <span>c</span>Alternativa
+                                                    'c'.</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <button class="button w-50 m-5 btn-aux-responder"
+                                            onclick="verificarResposta('pergunta2', 'b', true)">Responder</button>
+                                        <div class="retorno">
+                                            <p class="explicacao py-lg-0 p-sm-5"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="pergunta3" class="font-dark">
+                <div class="text-light pb-5 overflow-hidden">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="bg-primary-dark rounded-4 p-lg-5 pt-5">
+                                <div class="row g-0">
+                                    <div class="col-12 col-lg-6">
+                                        <div class="container-fluid pergunta pe-lg-5 text-start" id="pergunta3"
+                                            data-ja-respondeu="false">
+                                            <span class="titulo-pergunta">Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit. Ad:</span>
+                                            <div class="opcoes pt-3">
+                                                <label
+                                                    data-comentario="Incorreto, comentário sobre a alternativa 'a' da questão '2'."><input
+                                                        type="radio" name="q1" value="a"> <span>a</span>Alternativa
+                                                    'a'.</label>
+                                                <label
+                                                    data-comentario="Incorreto, comentário sobre a alternativa 'b' da questão '2'."><input
+                                                        type="radio" name="q1" value="b">
+                                                    <span>b</span>Alternativa 'b'.</label>
+                                                <label
+                                                    data-comentario="Correto, comentário sobre a alternativa 'c' da questão '2'."><input
+                                                        type="radio" name="q1" value="c"> <span>c</span>Alternativa
+                                                    'c'.</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <button class="button w-50 m-5 btn-aux-responder"
+                                            onclick="verificarResposta('pergunta3', 'c', true)">Responder</button>
+                                        <div class="retorno">
+                                            <p class="explicacao py-lg-0 p-sm-5"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="pergunta4" class="font-dark">
+                <div class="text-light pb-5 overflow-hidden">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="bg-primary-dark rounded-4 p-lg-5 pt-5">
+                                <div class="row g-0">
+                                    <div class="col-12 col-lg-6">
+                                        <div class="container-fluid pergunta pe-lg-5 text-start" id="pergunta4"
+                                            data-ja-respondeu="false">
+                                            <span class="titulo-pergunta">Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit. Ad:</span>
+                                            <div class="opcoes pt-3">
+                                                <label
+                                                    data-comentario="Incorreto, comentário sobre a alternativa 'a' da questão '4'."><input
+                                                        type="radio" name="q1" value="a"> <span>a</span>Alternativa
+                                                    'a'.</label>
+                                                <label
+                                                    data-comentario="Incorreto, comentário sobre a alternativa 'b' da questão '4'."><input
+                                                        type="radio" name="q1" value="b">
+                                                    <span>b</span>Alternativa 'b'.</label>
+                                                <label
+                                                    data-comentario="Correto, comentário sobre a alternativa 'c' da questão '4'."><input
+                                                        type="radio" name="q1" value="c"> <span>c</span>Alternativa
+                                                    'c'.</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <button class="button w-50 m-5 btn-aux-responder"
+                                            onclick="verificarResposta('pergunta4', 'c', true)">Responder</button>
+                                        <div class="retorno">
+                                            <p class="explicacao py-lg-0 p-sm-5"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="padding-x-container bg-aux box-saiba-mais-float text-start py-5 rounded-4 w-100 w-lg-75 d-block mx-auto">
+                <div class="text-center">
+                    <img src="./image/drop.svg" class="" alt="Exclamação" data-animation="circle-saiba-mais">
+                    <p class="pt-3">Informações</p>
+                </div>
+                <span class="text-justify">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.
+                    </p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, ad corrupti cumque quibusdam
+                        quidem reiciendis, fugiat quaerat, dolores quod iusto qui.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic laborum nemo molestiae blanditiis
+                        voluptate officia harum nostrum obcaecati! Iure possimus corrupti quasi aliquid odio unde
+                        incidunt suscipit facere fugit laboriosam? Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Autem veniam aut excepturi aliquid possimus pariatur rerum architecto, odit, repellat
+                        odio!</p>
+                </span>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="padding-x-container pb-5 d-flex gap-5">
+        <button class="button btn-col-2 btn-secondary w-50" onclick="window.open('../unidade01/index.html', '_blank')">Voltar para Unidade 01</button>
+        <button class="button btn-col-2 btn-secondary w-50" onclick="window.open('../unidade0/index.html', '_blank')">Ir para
+            Unidade 03</button>
+    </div>
+
+    <div id="referencias" class="bg-font-light padding-x-container py-5">
+        <div class="row container-fluid">
+            <p class="titulo pb-3">Referências</p>
+            <div class="col-12 col-lg-6 pe-lg-5 text-justify">
+                <p>
+                    SOBRENOME, A. B. et al. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem voluptates
+                    tenetur, perferendis perspiciatis cupiditate ipsam dolorem, optio, nihil quod minima eaque. Revista
+                    de Economia Digital, v. 18(3), e01234567, 2023.
+                </p>
+                <p>SOBRENOME, C. D. et al. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem voluptates
+                    tenetur, perferendis perspiciatis cupiditate ipsam dolorem, optio, nihil quod minima eaque. Revista
+                    de Psicologia Aplicada, v. 30(2), e09876543, 2022.
+                </p>
+                <p>SOBRENOME, E. F. et al. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem voluptates
+                    tenetur, perferendis perspiciatis cupiditate ipsam dolorem, optio, nihil quod minima eaque. Revista
+                    de Saúde Populacional, v. 12(4), e04567890, 2021.</p>
+                <p>SOBRENOME, G. H. et al. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem voluptates
+                    tenetur, perferendis perspiciatis cupiditate ipsam dolorem, optio, nihil quod minima eaque. Revista
+                    de Conservação Ambiental, v. 25(1), e02345678, 2020.<br>
+                    /10.1111/trf.13681. Acesso em: 21 ago. 2023.</p>
+                <p>SOBRENOME, I. J. et al. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem voluptates
+                    tenetur, perferendis perspiciatis cupiditate ipsam dolorem, optio, nihil quod minima eaque. Revista
+                    de Saúde Auditiva, v. 8(2), e07654321, 2019.</p>
+                <p>SOBRENOME, K. L. et al. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem voluptates
+                    tenetur, perferendis perspiciatis cupiditate ipsam dolorem, optio, nihil quod minima eaque. Revista
+                    de Nutrição e Saúde, v. 15(3), e09876543, 2018.</p>
+                <p>SOBRENOME, M. N. et al. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem voluptates
+                    tenetur, perferendis perspiciatis cupiditate ipsam dolorem, optio, nihil quod minima eaque. Revista
+                    de Educação Especial, v. 20(4), e01234567, 2017.
+                </p>
+                <p>SOBRENOME, K. L. et al. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem voluptates
+                    tenetur, perferendis perspiciatis cupiditate ipsam dolorem, optio, nihil quod minima eaque. Revista
+                    de Nutrição e Saúde, v. 15(3), e09876543, 2018.</p>
+                <p>SOBRENOME, C. D. et al. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem voluptates
+                    tenetur, perferendis perspiciatis cupiditate ipsam dolorem, optio, nihil quod minima eaque. Revista
+                    de Psicologia Aplicada, v. 30(2), e09876543, 2022.</p>
+
+            </div>
+            <div class="col-12 col-lg-6">
+                <p>SOBRENOME, C. D. et al. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem voluptates
+                    tenetur, perferendis perspiciatis cupiditate ipsam dolorem, optio, nihil quod minima eaque. Revista
+                    de Psicologia Aplicada, v. 30(2), e09876543, 2022.</p>
+                <p>SOBRENOME, I. J. et al. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem voluptates
+                    tenetur, perferendis perspiciatis cupiditate ipsam dolorem, optio, nihil quod minima eaque. Revista
+                    de Saúde Auditiva, v. 8(2), e07654321, 2019.</p>
+                <p>SOBRENOME, I. J. et al. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem voluptates
+                    tenetur, perferendis perspiciatis cupiditate ipsam dolorem, optio, nihil quod minima eaque. Revista
+                    de Saúde Auditiva, v. 8(2), e07654321, 2019.</p>
+                <p>SOBRENOME, G. H. et al. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem voluptates
+                    tenetur, perferendis perspiciatis cupiditate ipsam dolorem, optio, nihil quod minima eaque. Revista
+                    de Conservação Ambiental, v. 25(1), e02345678, 2020.</p>
+                <p>SOBRENOME, I. J. et al. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem voluptates
+                    tenetur, perferendis perspiciatis cupiditate ipsam dolorem, optio, nihil quod minima eaque. Revista
+                    de Saúde Auditiva, v. 8(2), e07654321, 2019.</p>
+                <p>SOBRENOME, M. N. et al. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem voluptates
+                    tenetur, perferendis perspiciatis cupiditate ipsam dolorem, optio, nihil quod minima eaque. Revista
+                    de Educação Especial, v. 20(4), e01234567, 2017.</p>
+                <p>SOBRENOME, A. B. et al. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem voluptates
+                    tenetur, perferendis perspiciatis cupiditate ipsam dolorem, optio, nihil quod minima eaque. Revista
+                    de Economia Digital, v. 18(3), e01234567, 2023.</p>
+                <p>SOBRENOME, I. J. et al. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem voluptates
+                    tenetur, perferendis perspiciatis cupiditate ipsam dolorem, optio, nihil quod minima eaque. Revista
+                    de Saúde Auditiva, v. 8(2), e07654321, 2019.</p>
+                <p>SOBRENOME, G. H. et al. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem voluptates
+                    tenetur, perferendis perspiciatis cupiditate ipsam dolorem, optio, nihil quod minima eaque. Revista
+                    de Conservação Ambiental, v. 25(1), e02345678, 2020.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js-unidades/bootstrap.bundle.min.js"></script>
+    <script src="../js-unidades/botoes.js"></script>
+    <script src="../js-unidades/index.js"></script>
+    <script src="../js-unidades/animacao.js"></script>
+    <script src="../js-unidades/alternativas.js"></script>
+</body>
+
+</html>

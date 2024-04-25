@@ -1,0 +1,205 @@
+.detalhe-1 {
+    bottom: 17%;
+    left: 6%;
+    width: 20%;
+}
+
+.detalhe-2 {
+    top: 5%;
+    left: 10%;
+    width: 10%;
+}
+
+.detalhe-3 {
+    top: 5%;
+    right: 10%;
+    width: 15%;
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes moveX {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-10px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveYfast {
+    10% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-25px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes moveDiagonal {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(-10px, -10px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes moveZoom {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.img-animacao.move-up-down {
+    animation-name: moveUpDown;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.img-animacao.move-x {
+    animation-name: moveX;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.img-animacao.move-y-fast {
+    animation-name: moveYfast;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.img-animacao.move-diagonal {
+    animation-name: moveDiagonal;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.img-animacao.move-zoom {
+    animation-name: moveZoom;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+
+
+[data-animation="left-to-right"] {
+    transform: translateX(-200%);
+    transition: transform 1s ease-in-out;
+}
+
+[data-animation="right-to-left"] {
+    transform: translateX(200%);
+    transition: transform 1s ease-in-out;
+}
+
+[data-animation="right-to-left"].active,
+[data-animation="left-to-right"].active {
+    transform: translateX(0%);
+    transition: transform 1s ease-in-out;
+}
+
+
+/* Animacao de mexer */
+
+[data-animation="shake"].active {
+    animation-name: shake;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+
+#accordion ul li:first-child div { 
+    display:block;
+    border-top:3px solid #FFCDCD;
+}
+
+
+@keyframes shake {
+    0% {
+        transform: translate(0, 0) rotate(0);
+    }
+
+    10%, 30%, 50%, 70%, 90% {
+        transform: translate(-5px, 0) rotate(-5deg);
+    }
+
+    20%, 40%, 60%, 80% {
+        transform: translate(5px, 0) rotate(5deg);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(0);
+    }
+}
+
+/* Animacao para piscar bolinha no destaque */
+
+
+
+[data-animation="circle-saiba-mais"].active {
+    animation-name: circle_saiba_mais;
+    animation-duration: 4s;
+    animation-timing-function: normal;
+}
+
+@keyframes circle_saiba_mais {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

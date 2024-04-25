@@ -1,0 +1,109 @@
+.toggle-sound {
+    position: fixed;
+    right: 1rem;
+    top: 3rem;
+    background-color: var(--dark);
+    width: 35px;
+    height: 33px;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10001;
+    animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    box-shadow: 0 0 0 0 var(--primary-blue);
+}
+
+.toggle-sound.sound-mute {
+    box-shadow: none;
+    animation: blink 2s linear infinite both;
+    animation-delay: 0s;
+}
+
+.musica {
+    z-index: 10000;
+    background-color: var(--black);
+    position: fixed;
+    right: 12px;
+    top: 52px;
+    font-size: small;
+    margin-top: 2rem;
+}
+
+.sound {
+    width: 97%;
+    height: 98%;
+    position: absolute;
+    cursor: pointer;
+    display: inline-block;
+    right: 1px;
+    top: 0;
+}
+
+.sound--icon {
+    color: inherit;
+    line-height: inherit;
+    font-size: 1.6rem;
+    display: block;
+    margin: auto;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.sound--wave {
+    position: absolute;
+    border: 2px solid transparent;
+    border-right: 2px solid #fff;
+    border-radius: 50%;
+    transition: all 200ms;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 15px;
+}
+
+.sound--wave_one {
+    width: 31%;
+    height: 43%;
+}
+
+.sound--wave_two {
+    width: 53%;
+    height: 65%;
+}
+
+.sound--wave_three {
+    width: 68%;
+    height: 85%;
+}
+
+.sound-mute .sound--wave {
+    border-radius: 0;
+    width: 35%;
+    height: 32%;
+    border-width: 0 2px 0 0;
+}
+
+.sound-mute .sound--wave_one {
+    -webkit-transform: rotate(45deg) translate3d(0, -50%, 0);
+    transform: rotate(45deg) translate3d(0, -50%, 0);
+}
+
+.sound-mute .sound--wave_two {
+    -webkit-transform: rotate(-45deg) translate3d(0, 50%, 0);
+    transform: rotate(-45deg) translate3d(0, 50%, 0);
+}
+
+.sound-mute .sound--wave_three {
+    opacity: 0;
+    transform: translateX(-46%);
+    height: 20%;
+}
+
+@media (max-width: 576px){
+    .musica {
+        right: 53px;
+        top: 24px;
+    }
+    }

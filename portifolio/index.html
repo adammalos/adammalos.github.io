@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adam Malos | Projetos</title>
+  <link rel="shortcut icon" href="./img/suitcase.ico">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/mute.css">
+  <link rel="stylesheet" href="./css/animation.css">
+  <link rel="stylesheet" href="./css/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+  <!-- mute -->
+  <div id="toggleSoundButton" class="unmuted toggle-sound sound-mute">
+    <div class="tooltip--left sound" data-tooltip="Turn On/Off Sound">
+      <div class="sound--icon fa fa-volume-off"></div>
+      <div class="sound--wave sound--wave_one"></div>
+      <div class="sound--wave sound--wave_two"></div>
+      <div class="sound--wave sound--wave_three"></div>
+    </div>
+  </div>
+  <p class="musica">.música.</p>
+  <!-- cyberpunk-music -->
+  <audio id="cyberpunkSound">
+    <source src="./sound/cyberpunk.mp3" type="audio/mpeg" auto-play>
+    Your browser does not support the audio element.
+  </audio>
+  <!-- glitch-sound-effect -->
+  <audio id="glitchSound">
+    <source src="./sound/glitch-sound-effect.mp3" type="audio/mpeg" auto-play>
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- navbar -->
+  <div id="navbar"></div>
+  <!-- hero -->
+  <div id="inicio" class="padding-x-container d-flex justify-content-center py-5 font-primary-white bg-black">
+    <section id="hero">
+      <div class="hero-title text-center px-0 px-lg-5">Adam Malos</div>
+
+      <div class="col-8 distorção-borda order-first"></div>
+    </section>
+
+  </div>
+
+  <div class="mx-auto w-100 w-lg-50 hero-lista pb-3">
+    <p class="line-height-0">Stack:</p>
+    <p>HTML | CSS | JS | Bootstrap | React | Node | Linux | SQL | Django | Python |</p>
+  </div>
+
+
+
+  <!-- projetos -->
+  <p class="modulo">
+    /// MÓDULO.PROJETOS
+    <br>
+    carregando...
+  </p>
+  <div class="line-top"></div>
+  <div class="bg-yellow bg-dots">
+    <div class="container-caixa padding-x-container py-5">
+      <div class="caixa col-6">
+        <i class="bi bi-cursor pointer flip-horizontal"></i>
+        <a class="w-75 rounded-2 d-block mx-auto font-primary-white ratio ratio-16x9" href="../Curso_prototipo/unidade01/index.html" target="_blank">
+          <img id="gif1" class="zoom-in" src="img/curso-prototipo.PNG" alt="Gif 1">
+        </a>
+      </div>
+      <img class="lines-l" src="img/lines-l.svg" alt="">
+      <img class="lines-t" src="img/lines-t.svg" alt="">
+      <div class="col-6 caixa-text">
+        <p class="titulo-caixa-text">
+          /// .Projeto.Curso_Protótipo
+        </p>
+        <p>Este é um projeto de curso interativo, onde o conteúdo original foi substituído por textos e imagens alternativas para preservar a integridade do material. O objetivo é oferecer uma experiência educacional envolvente, incentivando a participação ativa dos alunos. Cada elemento foi selecionado para promover a aprendizagem e o interesse contínuo.</p>
+      </div>
+    </div>
+    <div class="container-caixa padding-x-container py-5">
+      <div class="caixa col-6">
+        <i class="bi bi-cursor pointer flip-horizontal"></i>
+        <a class="w-75 rounded-2 d-block mx-auto font-primary-white ratio ratio-16x9" href="" target="_blank">
+          <img id="gif2" class="zoom-in" src="img/site.PNG" alt="Gif 1">
+        </a>
+      </div>
+      <img class="lines-l" src="img/lines-l.svg" alt="">
+      <img class="lines-t" src="img/lines-t.svg" alt="">
+      <div class="col-6 caixa-text">
+        <p class="titulo-caixa-text">
+          /// .Projeto.Muscle_Mate
+        </p>
+        <p>Projeto em desenvolvimento.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="line-bottom"></div>
+  <!-- footer -->
+  <footer id="footer">
+    <div class="footer py-md-5">
+      <div class="footer-container container py-md-4 py-5">
+        <ul class="footer-lista">
+          <li>
+            &copy; 2023 Adam Malos. Todos os direitos reservados.
+          </li>
+          <li>
+            <img src="img/phone-fill.svg" alt="">
+            +55 11964451613
+          </li>
+          <li>
+            <img src="img/google.svg" alt="">
+            adamdomingosmm@gmail.com
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/jquery.min.js" type="text/babel"></script>
+  <script src="./js/animacao.js" type="text/babel"></script>
+  <script src="./js/navbar.jsx" type="text/babel"></script>
+  <script src="./js/gif.js" type="text/babel"></script>
+</body>
+
+</html>

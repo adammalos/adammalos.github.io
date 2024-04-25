@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adam Malos | Projetos</title>
+  <link rel="shortcut icon" href="./img/suitcase.ico">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/mute.css">
+  <link rel="stylesheet" href="./css/animation.css">
+  <link rel="stylesheet" href="./css/bootstrap-icons.min.css">
+</head>
+
+<body>
+  <!-- mute -->
+  <div id="toggleSoundButton" class="unmuted toggle-sound sound-mute">
+    <div class="tooltip--left sound" data-tooltip="Turn On/Off Sound">
+      <div class="sound--icon fa fa-volume-off"></div>
+      <div class="sound--wave sound--wave_one"></div>
+      <div class="sound--wave sound--wave_two"></div>
+      <div class="sound--wave sound--wave_three"></div>
+    </div>
+  </div>
+  <p class="musica">.música.</p>
+  <!-- cyberpunk-music -->
+  <audio id="cyberpunkSound">
+    <source src="./sound/cyberpunk.mp3" type="audio/mpeg" auto-play>
+    Your browser does not support the audio element.
+  </audio>
+  <!-- glitch-sound-effect -->
+  <audio id="glitchSound">
+    <source src="./sound/glitch-sound-effect.mp3" type="audio/mpeg" auto-play>
+    Your browser does not support the audio element.
+  </audio>
+  <!-- navbar -->
+  <div id="navbar"></div>
+<!-- hero -->
+<div id="inicio" class="padding-x-container d-flex justify-content-center py-5 font-primary-white bg-black">
+  <div class="">
+    <section id="hero">
+      <div class="page-title text-center px-0 px-lg-5">/// CONFIDENCIAL</div>
+    </section>
+  </div>
+</div>
+  <!-- projetos -->
+  <p class="modulo">
+    /// MÓDULO.INTUITO
+    <br>
+    carregando...
+  </p>
+  <div class="position-relative line-top fixed-top"></div>
+  <div class="bg-yellow">
+    <div class="padding-x-container py-5">
+      <div class="bg-black padding-x-container py-5 position-relative bg-header">
+        <p>
+          Olá, meu nome é <span id="conf-1" onclick="removerEstilos('conf-1')" class="conf">Adam Malos</span> e é um prazer tê-lo aqui em meu portfólio digital. Tenho <span id="conf-2" onclick="removerEstilos('conf-2')" class="conf">22 anos</span> e gosto muito de me
+          dedicar ao mundo da tecnologia e do desenvolvimento front-end.
+        </p>
+        <p>
+          Ao criar este espaço, fui inspirado por uma estética <span id="conf-3" onclick="removerEstilos('conf-3')" class="conf">cyberpunk</span>, uma mistura intrigante entre futurismo e uma
+          atmosfera distópica. Essa influência não apenas moldou a aparência visual do meu portfólio, mas também influenciou
+          minha abordagem ao desenvolvimento front-end. Meu objetivo é <span id="conf-4" onclick="removerEstilos('conf-4')" class="conf">não apenas construir sites e aplicativos, mas também
+            criar experiências digitais que envolvam e cativem os usuários</span>.
+        </p>
+        <p>
+          Cada projeto que você encontrará aqui é fruto de muitas horas de trabalho dedicado. Desde a concepção inicial até a
+          implementação final, cada detalhe é cuidadosamente planejado para garantir uma experiência de usuário excepcional.
+        </p>
+        <p>
+          Ao navegar por este portfólio, você descobrirá uma variedade de projetos que refletem minha experiência e minha
+          paixão pelo desenvolvimento front-end. De websites responsivos a aplicativos web interativos, cada projeto
+          contribuiu para o meu crescimento profissional e reflete meu compromisso com a excelência.
+        </p>
+        <p>
+          Espero que ao explorar este portfólio, você possa obter uma visão do meu trabalho e da minha jornada no mundo do
+          <span id="conf-5" onclick="removerEstilos('conf-5')" class="conf">desenvolvimento front-end</span>. Fique à vontade para explorar cada projeto e descobrir mais sobre meu processo criativo.
+        </p>
+        <p>
+          Agradeço sua visita e espero que você aproveite a experiência ao explorar meu portfólio digital!
+        </p>
+        <p><span id="conf-6" onclick="removerEstilos('conf-6')" class="conf">Não se esqueça de testar a reponsividade!</span></p>
+      </div>
+    </div>
+  </div>
+    <div class="line-bottom"></div>
+  <!-- footer -->
+  <footer id="footer">
+    <div class="footer py-md-5">
+      <div class="footer-container container py-md-4 py-5">
+        <ul class="footer-lista">
+          <li>
+            &copy; 2023 Adam Malos. Todos os direitos reservados.
+          </li>
+          <li>
+            <img src="img/phone-fill.svg" alt="">
+            +55 11964451613
+          </li>
+          <li>
+            <img src="img/google.svg" alt="">
+            adamdomingosmm@gmail.com
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+
+
+  
+
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/jquery.min.js" type="text/babel"></script>
+  <script src="./js/navbar.jsx" type="text/babel"></script>
+  <script src="./js/remove-conf.js" type="text/babel"></script>
+  <script src="./js/animacao.js" type="text/babel"></script>
+</body>
+
+</html>

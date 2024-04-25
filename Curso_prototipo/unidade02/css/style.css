@@ -1,0 +1,14 @@
+.img-centro {
+    margin: 0 auto;
+    height: auto;
+}
+
+.img-dor {
+    width: 600px;  
+    height: auto;
+}
+
+.rio-3 {
+    background-image: url('../image/rio-3.png'); 
+    background-position: center;
+}
