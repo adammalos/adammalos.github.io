@@ -150,7 +150,7 @@ body {
 
 .line-top {
   background-image: url("../img/razor-module.svg");
-  background-size: cover;
+  background-size: auto;
   height: 2.25rem; 
   width: 100%;
   position: static;
