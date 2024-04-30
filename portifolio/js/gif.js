@@ -23,4 +23,4 @@ function trocarImagem(id, novoSrc) {
 
 // Chamar a função para trocar a imagem quando o mouse estiver sobre ela para gif1
 trocarImagem("gif1", "./gifs/curso.gif");
-trocarImagem("gif2", "./gifs/test.gif");
+trocarImagem("gif2", "./img/nada.png");

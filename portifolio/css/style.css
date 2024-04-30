@@ -191,6 +191,10 @@ body {
 }
 
 /* re-use */
+.mr-1 {
+  margin-right: 1rem !important;
+}
+
 .titulo-caixa-text {
   font-size: 1.50rem;
   font-weight: 700;
